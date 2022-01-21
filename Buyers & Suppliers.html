@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Adminhub-Master</title>
+
+       
+
+    
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+
+
+
+
+        .btn {
+            background-color:light gray;
+            border: none;
+            border-radius: 30px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 18px;
+            
+        }
+    </style>
+</head>
+
+<body style="background-color: lightgray">
+
+ 
+
+  <section id="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-smile'></i>
+            <span class="text">AdminHub</span>
+        </a>
+        <ul class="side-menu top">
+            <li class="active">
+                <a href="home.html">
+                    <i class="bx bxs-home"></i>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-comments-dollar"></i>
+                    <span class="text">Transaction</span>
+                </a>
+            </li>
+
+
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-comment-dots"></i>
+                    <span class="text">Quotations</span>
+                </a>
+            </li>
+
+
+            <li class="active">
+                <a href="#">
+                    &nbsp&nbsp&nbsp <i class="far fa-file-alt"></i> &nbsp &nbsp
+                    <span class="text">All Documents</span>
+                </a>
+            </li>
+
+
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <span class="text">Payments</span>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="inventory.html">
+                    <i class="fas fa-dolly-flatbed"></i>
+                    <span class="text">Inventory</span>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="Buyers & Suppliers.html">
+                    <i class="fas fa-users"></i>
+                    <span class="text">Buyers & Suppliers</span>
+                </a>
+            </li>
+
+
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-chart-line"></i>
+                    <span class="text">Buisness Intelligence</span>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="#" class="logout">
+                    <i class="fas fa-book-open"></i>
+                    <span class="text">Reports</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="content">
+    <nav>
+     <i class='bx bx-menu'></i>
+       <a href="#" class="notification">
+       <a href="#" class="profile">
+        <img src="img/people.png">
+            </a>
+            </a>
+
+    </nav>
+
+      <h1 style="padding-left: 30px">Buyers & Suppliers</h1>
+
+    <div class="container">
+  <div class="btn-group">
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-left: 750px">Item Master
+    <span class="caret"></span></button>
+        <ul class="dropdown-menu" style="margin-left: 750px">
+      <li><a href="#">Add Items(Multiple)</a></li>
+      <li><a href="#">Edit Items(Multiple)</a></li>
+      <li><a href="#">Delete Items(Multiple)</a></li>
+    </ul>
+    </div>
+
+
+   <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-left:10px">Add Company
+    <span class="caret"></span></button>
+        <ul class="dropdown-menu" style="margin-left:10px">
+      <li><a href="#">Add Single Company</a></li>
+      <li><a href="#">Upload Multiple Companies</a></li>
+     
+    </ul>
+    </div>
+</div>
+
+<!-- Middle section -->
+<div class="btn-group" style="margin-top: 50px">
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-left:10px;width: 250px;height: 40px">Your Contacts
+    <span class="caret"></span></button>
+        <ul class="dropdown-menu" style="margin-left: 50px">
+      <li><a href="#">Add Items(Multiple)</a></li>
+      <li><a href="#">Edit Items(Multiple)</a></li>
+      <li><a href="#">Delete Items(Multiple)</a></li>
+    </ul>
+    </div>
+
+
+   <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-left:10px;width: 250px;height: 40px;">All
+    <span class="caret"></span></button>
+        <ul class="dropdown-menu" style="margin-left:10px">
+      <li><a href="#">Add Items(Multiple)</a></li>
+      <li><a href="#">Edit Items(Multiple)</a></li>
+      <li><a href="#">Delete Items(Multiple)</a></li>
+    </ul>
+    </div>
+
+   <!--  <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-left:10px;width: 450px;height: 40px">Item Master
+    <span class="caret"></span></button>
+        <ul class="dropdown-menu" style="margin-left:10px">
+      <li><a href="#">Add Items(Multiple)</a></li>
+      <li><a href="#">Edit Items(Multiple)</a></li>
+      <li><a href="#">Delete Items(Multiple)</a></li>
+    </ul>
+    </div> -->
+
+  <div class="form-group">
+    <input type="email" class="form-control"placeholder="Search Your Connection" style="height: 40px;
+    width:450px;margin-left: 10px">
+  </div>
+</div>
+
+<!-- table section
+ -->
+    <div style="overflow-x:auto;margin-top: 120px">
+  <table>
+    <tr>
+      <th>Company</th>
+      <th>Tags</th>
+      <th>ADDED ON</th>
+      <th>ACTIONS</th>
+    </tr>
+    <tr>
+      <td>Buyer</td>
+      <td>00</td>
+      <td>00</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Supplier</td>
+      <td>Jackson</td>
+      <td>94</td>
+      <td>94</td>
+    </tr>
+  </table>
+</div>
+
+   <!--  <div class="row" style="margin-left:10px, overflow-x:auto;">
+      <table class="table">
+  <thead class="thead-dark" style="background-color: orange">
+    <tr>
+      <th scope="col">ITEMID#</th>
+      <th scope="col">ITEM NAME</th>
+      <th scope="col">ITEM CATEGORY</th>
+      <th scope="col">CURRENT STOCK</th>
+      <th scope="col">UNIT</th>
+      <th scope="col">PRICE</th>
+      <th scope="col">TYPE</th>
+      <th scope="col">HSN CODE</th>
+      <th scope="col">TAX</th>
+      <th scope="col">MIN STOCK LEVEL</th>
+      <th scope="col">MAX STOCK LEVEL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td><input type="text" placeholder="search"></input></td>
+      <td><input type="text" placeholder="search"></input></td>
+      <td><input type="text" placeholder="search"></input></td>
+      <td>search</td>
+      <td>abc</td>
+      <td>def</td>
+       <td><input type="text" placeholder="search"></input></td>
+      <td><input type="text" placeholder="search"></input></td>
+      <td>d</td>
+       <td>search</td>
+      <td>abc</td>
+      <td>def</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+       <td>Jacob</td>
+      <td>kg</td>
+      <td>@fat</td>
+       <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+      <td>Larry</td>
+      <td>kg</td>
+      <td>@twitter</td>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+       <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+</div> -->
+
+
+</div>
+<!--  -->
+
+</section>
+</body>
+</html>
+
+
+
+
+

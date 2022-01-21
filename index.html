@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>AdminHub</title>
+</head>
+
+<body>
+
+
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-smile'></i>
+            <span class="text">AdminHub</span>
+        </a>
+        <ul class="side-menu top">
+            <li class="active">
+                <a href="home.html">
+                    <i class="bx bxs-home"></i>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-comments-dollar"></i>
+                    <span class="text">Transaction</span>
+                </a>
+            </li>
+
+
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-comment-dots"></i>
+                    <span class="text">Quotations</span>
+                </a>
+            </li>
+
+
+            <li class="active">
+                <a href="#">
+                    &nbsp&nbsp&nbsp <i class="far fa-file-alt"></i> &nbsp &nbsp
+                    <span class="text">All Documents</span>
+                </a>
+            </li>
+
+
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <span class="text">Payments</span>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="inventory.html">
+                    <i class="fas fa-dolly-flatbed"></i>
+                    <span class="text">Inventory</span>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="Buyers & Suppliers.html">
+                    <i class="fas fa-users"></i>
+                    <span class="text">Buyers & Suppliers</span>
+                </a>
+            </li>
+
+
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-chart-line"></i>
+                    <span class="text">Buisness Intelligence</span>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="#" class="logout">
+                    <i class="fas fa-book-open"></i>
+                    <span class="text">Reports</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+
+
+    <!-- CONTENT -->
+    <section id="content">
+        <!-- NAVBAR -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <!-- <a href="#" class="nav-link">Categories</a> -->
+            <!-- <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+                </div>
+            </form> -->
+            <input type="checkbox" id="switch-mode" hidden>
+            <label for="switch-mode" class="switch-mode"></label>
+            <a href="#" class="notification">
+                <!-- <i class='bx bxs-bell'></i>
+                <span class="num">8</span> -->
+                <a href="#" class="profile">
+                <img src="img/people.png">
+            </a>
+            </a>
+            <!--  -->
+        </nav>
+        <!-- NAVBAR -->
+
+        <!-- MAIN -->
+
+       
+         
+        
+
+        <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="margin-left: 50px; ">Range Selection
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" style="margin-left: 50px">
+      <li><a href="#">Last 6Weeks</a></li>
+      <li><a href="#">Last 3Months</a></li>
+      <li><a href="#">Last 12Months</a></li>
+       <li><a href="#">Month to Date</a></li>
+      <li><a href="#">Previous Month</a></li>
+      <li><a href="#">Quarter to Date</a></li>
+      <li><a href="#">Last Quarter</a></li>
+      <li><a href="#">Financial Year to Date</a></li>
+      <li><a href="#">Previous Financial Year</a></li>
+      <li><a href="#">Custom Dates</a></li>
+    </ul>
+  </div>
+
+ <!--  <p style="color: red; padding-left: 55px; padding-top: 10px; font-size: 12px">Select the time period</p> -->
+
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="margin-left: 850px">All
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" style="margin-left: 850px">
+      <li><a href="#">Region-Wise</a></li>
+      <li><a href="#">Customer-Wise</a></li>
+      <li><a href="#">Product-Wise</a></li>
+      <li><a href="#">Category-Wise</a></li>
+    </ul>
+  </div>
+
+<!-- <p style="color: red; padding-left: 55px; padding-top: 10px; font-size: 12px">Select the time period</p> -->
+
+
+        <div class="bg-img">
+            <div class="dashboard-cards">
+                <div class="card" id="card-1">
+                    <div class="chart-canvas">
+                        <canvas id="myChart" style="width:50%;height:70%"></canvas>
+                    </div>
+                </div>
+
+
+                <!-- <div class="card" id="card-2">
+                    <div class="chart-canvas">
+
+                        <canvas id="ExpensesByCategory"></canvas>
+
+                    </div>
+                </div>-->
+
+                <div class="card" id="card-3">
+                    <div class="chart-canvas">
+                        <canvas id="ExpensesByPaymentMethod" style="width: 50%;height:70% "></canvas>
+                    </div>
+                </div>
+                <!-- <div class="card" id="card-4">
+                    <div class="chart-canvas">
+                        <canvas id="ExpensesByCategoryBenchmark"></canvas>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- MAIN -->
+    </section>
+    <!-- CONTENT -->
+
+
+    <script src="script.js"></script>
+    <script src="navigation.js"></script>
+    <script src="graph.js"></script>
+</body>
+</html>
